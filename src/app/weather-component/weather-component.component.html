@@ -1,0 +1,14 @@
+<div align="center">
+    <button mat-raised-button color = "primary" (click) = "getLocation()">Show weather data</button>
+</div>
+<mat-card *ngIf = "isButtonClicked" style="text-align: center;">
+    <mat-card-title>
+        Weather for your location: {{currentLocation}}
+    </mat-card-title>
+    <mat-card-content>
+        <a class="heading1">Temperature: {{currentTemp}}</a>
+    </mat-card-content>
+    <mat-card-content>
+        <a class="heading1">Weather: {{currentConditions}}</a>
+    </mat-card-content>
+</mat-card>
